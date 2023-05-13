@@ -1,12 +1,12 @@
-import Certificate1 from "./certifications/cert1.png";
-import Certificate2 from "./certifications/cert2.png";
-import Certificate3 from "./certifications/cert3.png";
-import Certificate4 from "./certifications/cert4.png";
-import Certificate5 from "./certifications/cert5.png";
-import Certificate6 from "./certifications/cert6.png";
-import Certificate7 from "./certifications/cert7.png";
-import Certificate8 from "./certifications/cert8.png";
-import Certificate9 from "./certifications/cert9.png";
+import Certificate1 from "./certificates/cert1.png";
+import Certificate2 from "./certificates/cert2.png";
+import Certificate3 from "./certificates/cert3.png";
+import Certificate4 from "./certificates/cert4.png";
+import Certificate5 from "./certificates/cert5.png";
+import Certificate6 from "./certificates/cert6.png";
+import Certificate7 from "./certificates/cert7.png";
+import Certificate8 from "./certificates/cert8.png";
+import Certificate9 from "./certificates/cert9.png";
 
 export const DataCertificates = [
  {
