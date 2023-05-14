@@ -58,7 +58,7 @@ export const CompleteProjects = [
   projectName: "Dorminant Color Detector",
   projectImg: Colormodel,
   projectDescription: "Machie learning model that extracts colors in an image and return available percentages if colors detected in specific image",
-  projectUrl: "https://multiple-profile-todo.netlify.app/",
+  projectUrl: "https://dorminant-color-detector-in-an-image.netlify.app",
  },
  {
   id: 5,
