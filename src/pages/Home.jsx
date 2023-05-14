@@ -10,11 +10,12 @@ import 'aos/dist/aos.css';
 
 import DisableRightClick from '../components/maincomps/DisableRightClickAndScreenshot'
 
-
 import { DataCertificates } from '../constants/Certificates.data'
 import { Resumecvdata } from "../constants/resumedata"
 
 import Swal from 'sweetalert2'
+
+import PDFViewer from "../constants/resumepdf"
 
 
 const Home = ({ darkmode }) => {
@@ -24,6 +25,8 @@ const Home = ({ darkmode }) => {
   const[phoneauthentication, setPhoneauthentication] = useState('')
   const[certcount, setCertcount] = useState(0)
   const[resume, setResume] = useState(false)
+
+  const pdfUrls = ['./pdfs/MyResume.pdf', '/pdfs/MyCV.pdf'];
 
 
   // Open certificate
@@ -151,7 +154,7 @@ const Home = ({ darkmode }) => {
             <p className='Grettings' data-aos="fade-down">Hi, <span>I am</span></p>
             <h1 className='Name' data-aos="fade-up">Michael Douglas</h1>
             <p className='Typed' data-aos="zoom-in">Full Stack Developer.</p>
-            <p className='Profile' ddata-aos="zoom-in">Am a graduate from South Eastern Kenya University under Computer Science, Using new technology to write optimal codes to solve different technical problems. Visit the project section to see my work. Click certificate to visit my farther studies.</p>
+            <p className='Profile' ddata-aos="zoom-in">I am a 24-year-old computer science graduate from South Eastern Kenya University, with a specialization in full-stack development utilizing MERN stack technologies and machine learning programming. I am an enthusiastic team work, passionate about leveraging technology to solve real-world problems, and always eager to acquire new skills and enhance my knowledge.</p>
 
             <div className='ButtonsCvH' data-aos="fade-up">
               {!resume && <Button bg='skyblue' clr='white' onClick={showResumeDownload}>Download CV</Button>}
@@ -202,7 +205,7 @@ const Home = ({ darkmode }) => {
               <p>Download Page({Resumecvdata.length})</p>
             </div>
             {/* Display image */}
-            <div className='Imagecontainer'>
+            {/* <div className='Imagecontainer'>
               {Resumecvdata.map((resumedata, key) => {
                 return  <div className='SingleCertImage' key={key}>
                   <img src={resumedata.dataImage} height="100%" width="100%" alt={resumedata.id}/>
@@ -214,7 +217,9 @@ const Home = ({ darkmode }) => {
                   </div>
                 </div>
               })}
-            </div>
+              
+            </div> */}
+            <PDFViewer pdfUrls={pdfUrls} />
             </CertificatesCenter>
           
           </div>}

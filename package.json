@@ -15,6 +15,7 @@
     "@testing-library/user-event": "^13.2.1",
     "aos": "^3.0.0-beta.6",
     "node-sass": "^8.0.0",
+    "pdf2pic": "^2.1.4",
     "queue-microtask": "^1.2.3",
     "react": "^18.2.0",
     "react-alice-carousel": "^2.7.1",
