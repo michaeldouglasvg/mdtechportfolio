@@ -15,7 +15,6 @@ import { Resumecvdata } from "../constants/resumedata"
 
 import Swal from 'sweetalert2'
 
-import PDFViewer from "../constants/resumepdf"
 
 
 const Home = ({ darkmode }) => {
@@ -205,7 +204,7 @@ const Home = ({ darkmode }) => {
               <p>Download Page({Resumecvdata.length})</p>
             </div>
             {/* Display image */}
-            {/* <div className='Imagecontainer'>
+            <div className='Imagecontainer'>
               {Resumecvdata.map((resumedata, key) => {
                 return  <div className='SingleCertImage' key={key}>
                   <img src={resumedata.dataImage} height="100%" width="100%" alt={resumedata.id}/>
@@ -218,8 +217,7 @@ const Home = ({ darkmode }) => {
                 </div>
               })}
               
-            </div> */}
-            <PDFViewer pdfUrls={pdfUrls} />
+            </div>
             </CertificatesCenter>
           
           </div>}
