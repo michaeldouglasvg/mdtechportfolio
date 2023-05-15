@@ -63,22 +63,22 @@ const Contact = ({ darkmode }) => {
               </div>
 
               <div className='FormContainer' data-aos="fade-up">
-                <form>
+                <form name="contact" netlify>
                   <div className='Formgroup'>
                     <span>Full name</span>
-                    <input type="text" placeholder='Enter full name' />
+                    <input type="text" name="name" placeholder='Enter full name' />
                   </div>
                   <div className='Formgroup'>
                     <span>Email</span>
-                    <input type="text" placeholder='Your email address' />
+                    <input type="text" name='email' placeholder='Your email address' />
                   </div>
                   <div className='Formgroup'>
                     <span>Subject</span>
-                    <input type="text" placeholder='Reason for contact' />
+                    <input type="text" name='subject' placeholder='Reason for contact' />
                   </div>
                   <div className='Formgroup'>
                     <span>Message</span>
-                   <textarea placeholder='Write your message here...' />
+                   <textarea name='message' placeholder='Write your message here...' />
                   </div>
                   <div className='Formgroup'>
                     <input type="submit" value='Send Message' />
