@@ -13,6 +13,15 @@ import Footer from "./pages/Footer"
 
 function App() {
   const [mode, setMode] = useState(() => localStorage.getItem('mode') || 'light');
+  const [showAlert, setShowAlert] = useState(true);
+
+  useEffect(() => {
+    if (showAlert) {
+      alert('Hello there, keep browsing. Though some projects that uses Machine Learning model are partial functional. Am working on them to ensure you get the effectiveness of using such projects. You are welcome User.');
+      setShowAlert(false);
+    }
+  }, [showAlert]);
+
 
   // Function to handle colors
   const toggleMode = () => {
@@ -32,10 +41,6 @@ function App() {
       document.body.classList.remove(mode);
     };
   }, [mode]);
-
-  useEffect(() => {
-    alert("Hello there, keep browsing. Though some projects that uses Machine Learning model are partial functional. Am working on them to ensure you get the effectiveness of using such projects. You are welcome User.")
-  }, [])
 
   // Themes, mobile responsives & flex consitions
   const theme = {
