@@ -25,7 +25,6 @@ const Home = ({ darkmode }) => {
   const[certcount, setCertcount] = useState(0)
   const[resume, setResume] = useState(false)
 
-  const pdfUrls = ['./pdfs/MyResume.pdf', '/pdfs/MyCV.pdf'];
 
 
   // Open certificate
