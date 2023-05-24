@@ -7,6 +7,7 @@ import Faqapp from "./projects/faqapp.png"
 import Loans from "./projects/loans.png"
 import Portfoliotemplates from "./projects/portfoliotemplate.png"
 import Colormodel from "./projects/colormodel.png"
+import ShoppingCart from "./projects/shoppingcart.png"
 
 export const Partialprojects = [
  {
@@ -28,6 +29,14 @@ export const Partialprojects = [
 
 // Working Projects
 export const CompleteProjects = [
+ {
+  id: 8,
+  technology: "MERN Stack",
+  projectName: "Shopping Cart",
+  projectImg: ShoppingCart,
+  projectDescription: "Shopping site that enables you to select and add items to cart, you can pay or continue shopping.",
+  projectUrl: "https://shopping-cartpro.netlify.app/",
+ },
  {
   id: 1,
   technology: "Website (Panel)",
